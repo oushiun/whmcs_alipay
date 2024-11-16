@@ -59,9 +59,8 @@ class alipay_link {
 				$qr_url   - 支付链接
 
 			-->
-			<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
-			<a href= "{$qr_url}" ><div id= "qrcode" ></div><br>请打开支付宝扫码</a>
+			<div id= "qrcode" ></div>
 			<script>
 			$("#qrcode").qrcode({width:180,height:180,text:"{$qr_url}"});
 			setTimeout(stop, 300000);
